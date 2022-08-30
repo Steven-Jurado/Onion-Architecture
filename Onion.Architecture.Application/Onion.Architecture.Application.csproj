@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Ardalis.Specification" Version="6.1.0" />
     <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="FluentValidation" Version="11.2.1" />
@@ -16,11 +17,12 @@
 
   <ItemGroup>
     <Folder Include="DTOs\" />
+    <Folder Include="Features\Client\Commands\DeleteClientCommand\" />
+    <Folder Include="Features\Client\Commands\UpdateClientCommand\" />
+    <Folder Include="Features\Client\Queries\GetAllClients\" />
+    <Folder Include="Features\Client\Queries\GetClientById\" />
     <Folder Include="Filters\" />
-    <Folder Include="Features\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Mappings\" />
-    <Folder Include="Wrappers\" />
   </ItemGroup>
 
 </Project>

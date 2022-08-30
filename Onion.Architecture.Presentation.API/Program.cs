@@ -1,4 +1,6 @@
+using Onion.Architectura.Persistence;
 using Onion.Architecture.Application;
+using Onion.Architecture.Share;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +13,10 @@ builder.Services.AddSwaggerGen();
 
 // Services Layer Application
 builder.Services.AddAplicationLayer();
+
+// Persitencia de Datos
+builder.Services.AddPersistenceInfrastructure(builder.Configuration);
+builder.Services.AddSharedInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
