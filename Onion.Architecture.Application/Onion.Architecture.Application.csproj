@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -16,8 +16,6 @@
 
   <ItemGroup>
     <Folder Include="DTOs\" />
-    <Folder Include="Behaviours\" />
-    <Folder Include="Exceptions\" />
     <Folder Include="Filters\" />
     <Folder Include="Features\" />
     <Folder Include="Interfaces\" />
